@@ -3,7 +3,7 @@ const remoteVideo = document.getElementById('remoteVideo');
 const callButton = document.getElementById('callButton');
 const hangupButton = document.getElementById('hangupButton');
 const screenShareButton = document.getElementById('screenShareButton');
-const socket = new WebSocket('ws://localhost:8888');
+const socket = new WebSocket('ws://localhost:80');
 
 let peerConnection;
 let localMediaStream;
