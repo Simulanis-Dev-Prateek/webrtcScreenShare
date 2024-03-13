@@ -76,6 +76,6 @@ const emitMessage = (socket, jsonMessage) => {
 const getSocketById = (socketId) =>
   Array.from(wss.clients).find((client) => client.id === socketId);
 
-httpServer.listen(8888, () => {
+httpServer.listen(80, () => {
   console.log('app server listening on port 8888');
 });
